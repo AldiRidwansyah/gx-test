@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="property-list.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="custom-container">
+    <div class="custom-sidebar">
+        <div class="gx-logo">
+            <img src="assets/gx-logo.jfif" alt="" srcset="">
+        </div>
+        <div class="menu">
+            <div class="list-menu">
+                <a href="#">
+                    <img src="assets/dashboard.png" alt="" srcset="">
+                    <span class="list-menu-descr">Dashboard</span>    
+                </a>
+            </div>
+            <div class="list-menu">
+                <a href="#">
+                    <img src="assets/property.png" alt="" srcset="">
+                    <span class="list-menu-descr">Property Management</span>
+                </a>
+            </div>
+            <div class="list-menu">
+                <a href="#">
+                    <img src="assets/contact.png" alt="" srcset="">
+                    <span class="list-menu-descr">Contact Management</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="custom-navbar">
+            <div class="left-toggle">
+                <img src="assets/3-lines.svg" alt="">
+                <span>Property</span>
+            </div>
+            <div class="avatar">
+                <img src="assets/avatar.svg" alt="" srcset="">
+                <a href="">
+                    <img src="assets/triangle.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content-area">
+            <!--  -->
+            <div class="box-property">
+                <div class="content-header">
+                    <h4>Property List</h4>
+                </div>
+                <div class="box-filter-button">
+                    <select name="" id="" class="filter-button">
+                        <option value="">Filter Status</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Publish">Publish</option>
+                        <option value="Draft">Draft</option>
+                        <option value="Cancel">Cancel</option>
+                        <option value="On Sale">On Sale</option>
+                        <option value="Not Completed Yet">Not Completed Yet</option>
+                        <option value="Sold Out">Sold Out</option>
+                        <option value="Rejected">Rejected</option>
+                        <option value="Rented">Rented</option>
+                    </select>
+                    <button class="filter-button">Advanced Filter</button>
+                </div>
+                <div class="list-property">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID Property</th>
+                                <th>Property Image</th>
+                                <th>Property Name</th>
+                                <th>Owner Name</th>
+                                <th>Created On</th>
+                                <th>Entried By</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#19203905</td>
+                                <td><img src="assets/property-img-1.png" alt="" srcset=""></td>
+                                <td>Ini Vie Villa<br><span class="secondlabel">Free Hold - Villa</span></td>
+                                <td class="ownername">Joseph Stalin</td>
+                                <td>15 Dec 2021, 09:20:00</td>
+                                <td>Admin Name<br><span class="secondlabel">Admin</span></td>
+                                <td><span class="approved-btn" id="Approved">Approved</span><br><span class="secondlabel">Progress</span><br>65%</td>
+                            </tr>
+                            <tr>
+                                <td>#19203905</td>
+                                <td><img src="assets/property-img-2.png" alt="" srcset=""></td>
+                                <td>Aleva Villa<br><span class="secondlabel">Lease Hold</span></td>
+                                <td class="ownername">Pedro Guetierezz</td>
+                                <td>15 Dec 2021, 09:20:00</td>
+                                <td>Admin Name<br><span class="secondlabel">Admin</span></td>
+                                <td><span class="pending-btn" id="Pending">Pending</span><br><span class="secondlabel">Progress</span><br>65%</td>
+                            </tr>
+                            <tr>
+                                <td>#19203905</td>
+                                <td><img src="assets/property-img-3.png" alt="" srcset=""></td>
+                                <td>Jas Boutique Villa<br><span class="secondlabel">Free Hold - Villa</span></td>
+                                <td class="ownername">Kadek Wahyu Suwamerta</td>
+                                <td>15 Dec 2021, 09:20:00</td>
+                                <td>Admin Name<br><span class="secondlabel">Admin</span></td>
+                                <td><span class="rejected-btn" id="Rejected">Rejected</span><br><span class="secondlabel">Progress</span><br>65%</td>
+                            </tr>
+                            <tr>
+                                <td>#19203905</td>
+                                <td><img src="assets/property-img-0.png" alt="" srcset=""></td>
+                                <td>Black Penny Villas Ubud<br><span class="secondlabel">Free Hold - Land</span></td>
+                                <td class="ownername">Ni Luh Putu Ayu Swastidewi</td>
+                                <td>15 Dec 2021, 09:20:00</td>
+                                <td>Admin Name<br><span class="secondlabel">Admin</span></td>
+                                <td><span class="pending-btn" id="Pending">Pending</span><br><span class="secondlabel">Progress</span><br>65%</td>
+                            </tr>
+                            <tr>
+                                <td>#19203901</td>
+                                <td><img src="assets/property-img-0.png" alt="" srcset=""></td>
+                                <td>Braca Villa<br><span class="secondlabel">Lease Hold - Villa</span></td>
+                                <td class="ownername">Lia Bishop</td>
+                                <td>15 Dec 2021, 09:20:00</td>
+                                <td>Admin Name<br><span class="secondlabel">Admin</span></td>
+                                <td><span class="approved-btn" id="Approved">Approved</span><br><span class="secondlabel">Progress</span><br>65%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

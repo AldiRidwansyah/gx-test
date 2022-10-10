@@ -1,0 +1,87 @@
+.body {
+    display: flex;
+    width: 1366px;
+}
+.img-section{
+    width: 52%;
+    height: auto;
+    position: relative;
+}
+.img-section img{
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.img-title {
+    position: absolute;
+    top: 700px;
+    left: 80px;
+    color: white;
+    width: 60%;
+}
+.img-title p{
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.sign-in{
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 124px;
+    padding-right: 124px;
+}
+.sign-in h2{
+    font-weight: 800;
+}
+.sign-in p{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.logo{
+    width: 64px;
+    height: auto;
+    left: -24px;
+    margin-bottom: 32px;
+}
+.form-input {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.button-area{
+    margin-top: 48px;
+}
+.btn{
+    width: 144px !important;
+    background-color: #FF7D00 !important;
+    color: white !important;
+}
+
+.prop {
+    color: #FF7D00;
+}
+.version-txt{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 136px;
+    text-align: center;
+}
+
+.color-1 {
+    color: #FF7D00 !important;
+}
+.bg-color-1 {
+    background-color: #FF7D00 !important;
+}

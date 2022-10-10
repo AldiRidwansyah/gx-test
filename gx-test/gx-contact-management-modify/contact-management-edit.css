@@ -1,0 +1,225 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.custom-container{
+    display: flex;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    /* background-color: #2DB986; */
+}
+/* custom-sidebar and custom-navbar */
+
+.custom-sidebar {
+    min-width: 20vw;
+    min-height: 100vh;
+}
+.custom-sidebar .gx-logo{
+    display: flex;
+    justify-content: center;
+}
+.custom-sidebar .gx-logo img{
+    width: 50px;
+    margin: 12px auto 80px auto;
+}
+.custom-sidebar .menu .list-menu{
+    width: inherit;
+    /* height: 48px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 24px 24px 32px;
+    /* padding: 2px; */
+    /* background-color:#2DB986; */
+}
+.custom-sidebar .menu .list-menu:hover{
+    color: #FF7D00;
+    /* fill: #FF7D00; */
+}
+.custom-sidebar .menu .list-menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.custom-sidebar .menu .list-menu img{
+    width: 24px;
+    /* fill: #ACADC1; */
+    margin-right: 16px;
+    position: relative;
+}
+.custom-sidebar .menu .list-menu .list-menu-descr{
+    /* position: relative; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+.custom-sidebar .menu .list-menu a{
+    text-decoration: none;
+    color: #ACADC1;
+}
+.custom-sidebar .menu .list-menu a:hover{
+    color: #FF7D00;
+}
+
+/* custom-navbar and content are */
+.content{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* custom-navbar */
+.content .custom-navbar {
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+.content .custom-navbar .left-toggle {
+    /* background-color: #FF7D00; */
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content .custom-navbar .left-toggle img{
+    width: 48px;
+    padding-left: 24px;
+}
+.content .custom-navbar .left-toggle span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #26273B;
+    margin-left: 40px;
+}
+.content .custom-navbar .avatar {
+    right: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content .custom-navbar .avatar img{
+    margin-right: 6px;
+    border-radius: 50%;
+}
+/* Content Area */
+.content .content-area {
+    background-color: #F5F5F5;
+    width: inherit;
+    min-height: 100vh;
+    padding-top: 48px;
+    padding-left: 32px;
+    box-sizing: border-box;
+}
+/* form */
+.box-form {
+    width: auto;
+    height: auto;
+    /* background-color: aquamarine; */
+    background-color: #FFF;
+    border-radius: 8px !important;
+    margin: 24px !important;
+    padding: 16px;
+}
+.box-form h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #18255C;
+}
+.custom-row {
+    width: auto !important;
+}
+.form-group {
+    margin: auto auto 22px 24px !important;
+}
+.custom-form-label {
+    width: 296px;
+    box-sizing: border-box;
+}
+label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #26273B;
+    margin-right: 16px;
+}
+.required {
+    background: #F0F0F5;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+    color: #26273B;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select, textarea {
+    width: 640px !important;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid #ACADC1;
+    border-radius: 8px !important;
+    padding-left: 12px;
+}
+textarea {
+    height: 128px;
+}
+input[type="radio"]:checked{
+    background-color: #647DEB !important;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 12px;
+}
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+}
+.radio-label {
+    margin-right: 68px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #26273B;
+}
+.submit-button{
+    width: 640px !important;
+    box-sizing: border-box;
+}
+.save-button,
+.cancel-button {
+    width: auto;
+    height: 36px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+.save-button{
+    background-color: #FF7D00;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+.cancel-button{
+    background-color: #FFF;
+    color: #26273B;
+    border: 1px solid #ACADC1;
+}
