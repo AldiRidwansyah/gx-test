@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/contact-management-edit.css">    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="custom-container">
+        <div class="custom-sidebar">
+            <div class="gx-logo">
+                <img src="assets/gx-logo.jfif" alt="" srcset="">
+            </div>
+            <div class="menu">
+                <div class="list-menu">
+                    <a href="dashboard.html">
+                        <img src="assets/dashboard.png" alt="" srcset="">
+                        <span class="list-menu-descr">Dashboard</span>    
+                    </a>
+                </div>
+                <div class="list-menu">
+                    <a href="property-list.html">
+                        <img src="assets/property.png" alt="" srcset="">
+                        <span class="list-menu-descr">Property Management</span>
+                    </a>
+                </div>
+                <div class="list-menu">
+                    <a href="contact-management.html">
+                        <img src="assets/contact.png" alt="" srcset="">
+                        <span class="list-menu-descr">Contact Management</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="custom-navbar">
+                <div class="left-toggle">
+                    <img src="assets/3-lines.svg" alt="">
+                    <span>Contact Management</span>
+                </div>
+                <div class="avatar">
+                    <img src="assets/avatar.svg" alt="" srcset="">
+                    <a href="">
+                        <img src="assets/triangle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="content-area">
+                <!--  Content -->
+                <div class="d-flex flex-column">
+                <form action="">
+                    <!-- Contact Account Information Form -->
+                    <div class="custom-row">
+                        <div class="box-form">
+                            <h3>Contact Account Information</h3>
+                                <div class="form-group d-flex flex-row align-items-center">
+                                    <div class="custom-form-label">
+                                        <label for="Fullname">Fullname</label>
+                                        <span class="required">Required</span>    
+                                    </div>
+                                    <div>
+                                        <input type="text" id="Fullname" class="form-control" placeholder="Type fullname here">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row align-items-center">
+                                    <div class="custom-form-label">
+                                        <label for="Salutation">Status Salutation</label>
+                                        <span class="required">Required</span>    
+                                    </div>
+                                    <div>
+                                        <select name="Salutation" id="Salutation" class="">
+                                            <option value="">Select Status Salutation</option>
+                                            <option value="Mr">Mr.</option>
+                                            <option value="Ms">Ms.</option>
+                                            <option value="Mrs">Mrs.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row align-items-center">
+                                    <div class="custom-form-label">
+                                        <label for="Salutation">Contact Type</label>
+                                        <span class="required">Required</span>    
+                                    </div>
+                                    <div>
+                                        <select name="Contact Type" id="Contact Type" class="">
+                                            <option value="">Select Contact Type</option>
+                                            <option value="Administrator">Administrator</option>
+                                            <option value="Standard">Standard</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row align-items-center">
+                                    <div class="custom-form-label">
+                                        <label for="Country">Country</label>
+                                        </div>
+                                    <div>   
+                                        <select name="Country" id="Country" class="">
+                                            <option value="">Select Country</option>
+                                            <option value="C1">Country 1</option>
+                                            <option value="C2">Country 2</option>
+                                            <option value="C3">Country 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row align-items-center">
+                                    <div class="custom-form-label">
+                                        <label for="Country">Address</label>
+                                        </div>
+                                    <div>   
+                                        <textarea name="Address" id="Address" placeholder="Type Address Here" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- Contact Information Form -->
+                    <div class="custom-row">
+                        <div class="box-form">
+                            <h3>Contact Account Information</h3>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="IdentityNumber">Identity Number</label>
+                                    <span class="required">Required</span>    
+                                </div>
+                                <div>
+                                    <input type="number" id="IdentityNumber" class="form-control" placeholder="e.g 5288252258888852">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="UploadIDNumber">Upload Identity Number</label>   
+                                </div>
+                                <div>
+                                    <input type="text" id="UploadIDNumber" class="form-control" placeholder="Upload File (Pdf, Png, Jpg)">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="PhoneNumber">Phone Number</label>
+                                    <span class="required">Required</span>    
+                                </div>
+                                <div>
+                                    <input type="text" id="PhoneNumber" class="form-control" placeholder="e.g 082255569999">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="Email">Email</label>
+                                    <span class="required">Required</span>    
+                                </div>
+                                <div>
+                                    <input type="email" id="Email" class="form-control" placeholder="e.g john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="ContactPreferences">Contact Preferences</label>  
+                                </div>
+                                <div>
+                                    <select name="ContactPreferences" id="ContactPreferences" class="">
+                                        <option value="">Select Contact Preferences</option>
+                                        <option value="CP1">Contact P. 1</option>
+                                        <option value="CP2">Contact P. 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="Origin">Origin</label>   
+                                </div>
+                                <div>
+                                    <select name="Origin" id="Origin" class="">
+                                        <option value="">Select Origin</option>
+                                        <option value="O1">Origin 1</option>
+                                        <option value="O2">Origin 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="OwnerTaxNumber">Owner Tax Number</label>   
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="NPWP" name="Tax" checked>
+                                        <label for="NPWP" class="radio-label">Have NPWP</label>    
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="NoNPWP" name="Tax">
+                                        <label for="NoNPWP" class="radio-label">Don't have NPWN</label>    
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="ProNPWP" name="Tax">
+                                        <label for="ProNPWP" class="radio-label">Can be Processed</label>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="TaxNumber">Tax Number</label>  
+                                </div>
+                                <div>
+                                    <input type="text" id="TaxNumber" class="form-control" placeholder="e.g 55258582525">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="AssociateTo">Associate To</label>  
+                                </div>
+                                <div>
+                                    <input type="text" id="AssociateTo" class="form-control" placeholder="Search Contact">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <div class="custom-form-label">
+                                    <label for="isCompany">Company Info</label>  
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="isCompany">
+                                    <label for="isCompany" class="radio-label">Is Company?</label>
+                                </div>
+                            </div>
+                            <div id="hiddenForm" style="display: none;">
+                                <div class="form-group d-flex flex-row align-items-center" id="hiddenForm">
+                                    <div class="custom-form-label">
+                                        <label for="CompanyName">Company Name</label>
+                                        <span class="required">Required</span>    
+                                    </div>
+                                    <div>
+                                        <input type="text" id="Company Name" class="form-control" placeholder="e.g PT Archment Villa">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row align-items-center" id="hiddenForm">
+                                    <div class="custom-form-label">
+                                        <label for="CompanyTaxNumber">Company Tax Number</label>   
+                                    </div>
+                                    <div>
+                                        <input type="number" id="CompanyTaxNumber" class="form-control" placeholder="e.g 55258582525">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex flex-row align-items-center" id="hiddenForm">
+                                    <div class="custom-form-label">
+                                        <label for="CompanyAddress">Company Address</label>
+                                        <span class="required">Required</span>    
+                                    </div>
+                                    <div>
+                                        <input type="text" id="CompanyAddress" class="form-control" placeholder="e.g 082255569999">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex align-items-center">
+                                <div class="custom-form-label"><span class="d-none"></span></div>
+                                <div class="submit-button d-flex flex-row-reverse">
+                                    <button class="save-button">Save Data</button>
+                                    <button class="cancel-button">Cancel</button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="js/contact-management-edit.js"></script>
+</body>
+</html>
